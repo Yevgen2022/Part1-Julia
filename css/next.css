@@ -1,0 +1,54 @@
+/*****************Права частина*******************/
+.content_container .about_me .about_me_hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:center; */
+    background-color: lightgray;
+    
+   /* max-height: 100%; */
+    /* max-height: 683px; */
+
+}
+.content_container .about_me .about_me_hello .general_h3{
+    font-family: Montserrat-Julie-SemiBold;
+    font-size: 22px;
+    color: #A52424;
+    height: 100%;
+    margin-bottom: 21px;
+}
+.content_container .about_me .about_me_hello .general_p{
+    font-family: Montserrat-Julie-Regular;
+    font-size: 18px;
+    color: #232323;
+    line-height: 130%;
+    letter-spacing: 1,4px;
+    padding: 0;
+    margin: 0 0 7px 0;
+
+}
+
+.content_container .about_me .about_me_hello .about_me_div2_shadow{
+    width: 673px;
+    height: 330px;
+    background-color:aqua;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.content_container .about_me .about_me_hello .about_me_div2_shadow .foto_2{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 567px;
+    height: 330px;
+    top: 35px;
+    left: 118px;
+}
+.content_container .about_me .about_me_hello .about_me_div2_shadow .foto_1{
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    z-index: 1;
+}

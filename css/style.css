@@ -1,0 +1,645 @@
+
+*{box-sizing: border-box;}
+
+/*************************** підключені шрифти **********************************/
+@font-face{
+    font-family: Montserrat-Julie-Regular;
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@font-face{
+    font-family: Montserrat-Julie-Bold;
+    src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+@font-face{
+    font-family: Montserrat-Julie-SemiBold;
+    src: url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: Montserrat-Julie-Medium;
+    src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+/************************** шрифти  *********/
+
+/************************ Загальні класи  початок *****************************/ 
+ *.general_h2{
+    font-family: Montserrat-Julie-Bold;
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: #232323;
+    padding: 0;
+}
+
+*.general_p{
+    font-family: Montserrat-Julie-Regular;
+    font-size: 18px;
+    color: #232323;
+    line-height: 130%;
+    letter-spacing: 1,4px;
+}
+*.general_h3{
+    font-family: Montserrat-Julie-SemiBold;
+    font-size: 22px;
+}
+
+*.general_button{
+    font-family: Montserrat-Julie-Medium;
+    font-size: 18px;
+    color: #A52424;
+    border: 1px solid #A52424;
+    background-color: white;
+}
+
+*.general_button:hover{
+    background-color: lightgrey;
+}
+/************************ Загальні класи  кінець ******************************/
+
+
+
+
+/************************* Media request **************************************/
+
+/* Медіа-запит для екранів ноутбуків */
+  @media (max-width: 1024px) {
+    
+    .content_container .header_julie {
+         width: 100%;
+         /* background-color:green; */
+      }
+      
+    .content_container .firs_view{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        /* width: 85%; */
+       
+        /* background-color:green; */
+      }
+  }
+/************************************/
+
+/* Медіа-запит для екранів планшетів */
+@media (max-width: 768px) {
+    .content_container .header_julie {
+       width: 85%;
+       /* background-color:yellow; */
+       flex-direction: column;
+    }
+    /* .content_container .firs_view{
+       
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        height: auto; */
+        /* background-color: yellow; */
+    /* } */
+}
+/************************************/
+/* Медіа-запит для екранів телефонів */
+@media (max-width: 425px) {
+
+    body .header_julie {
+       width: 100%;
+       /* background-color:red; */
+    }
+
+    body .header_julie .heder_nav_menu li{   /*виставляємо навігацію у стовбчик*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_container .firs_view{
+       
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+       
+        /* background-color: red; */
+    }
+    
+}
+/****************************** The end of media request ************************/
+
+
+
+
+
+
+
+/***********Start properties of content_container **********************************************/
+.content_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+    /* background-color: burlywood; */
+}
+/************ End of properties content_container ****************************************************************
+
+    /*properties of header*/
+.header_julie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px auto 11px auto;
+}
+
+.header_julie .heder_logo_julie {
+    max-width: 109px; /*  максимальна ширина для логотипу */
+    max-height: 84px;
+  
+}
+
+.header_julie .heder_nav_menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat-Julie-Regular;
+    font-size: 18px;
+    color: #101010;
+}
+
+.header_julie .heder_nav_menu a{
+    text-decoration: none;
+}
+
+.heder_nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.heder_nav_menu ul li {
+    display: inline;
+    margin-right: 50px; /* Задаємо відстань між пунктами меню */
+    
+}
+
+.contact_julie p {
+    margin: 0;
+    font-family: Montserrat-Julie-Regular;
+    font-size: 18px;
+    color: #A52424;
+}
+
+/* The end of properties of header*/
+
+
+
+
+
+
+/******************* Properties of First Part. First view ***************************/
+.content_container .firs_view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 150px;
+        
+}
+.content_container .firs_view .firs_view_name {
+    display: flex;
+    flex-direction: column;
+    max-width: 443px;
+    max-height: 347px;
+    margin-top: 109px;
+}
+.content_container .firs_view .firs_view_name h1{
+    font-family: Montserrat-Julie-Bold;
+    font-size: 72px;
+    color: #232323;
+    letter-spacing: 5px;
+    margin: 0 auto 20px 0;
+}
+
+.content_container .firs_view .firs_view_name p{
+    font-family: Montserrat-Julie-SemiBold;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    color: #101010;
+    margin: 0 auto 60px 0;
+}
+
+.content_container .firs_view .firs_view_name .general_button{
+    /* font-family: Montserrat-Julie-Medium;
+    font-size: 18px;
+    color: #A52424; */
+    max-width: 336px;
+    /* border: 1px solid #A52424; */
+    padding: 18px 20px;
+    /* background-color: white; */
+}
+/* .content_container .firs_view .firs_view_name button:hover{
+    background-color: lightgrey;
+} */
+
+.content_container .firs_view .firs_view_foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    max-width: 674px;
+    max-height: 677px;  
+}
+/****************** End of Properties of First Part. First view **************************/
+
+
+
+
+
+
+
+/********************** Start property of second part *********************************/
+/************************ Головна секція другої частини ***********************************/
+.content_container .about_me{  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+/************************ ліва частина ********************/
+.content_container .about_me .about_me_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+}
+.content_container .about_me .about_me_about .general_h2{
+    /* font-family: Montserrat-Julie-Bold;
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: #232323; */
+    padding: 0;
+    margin: 0 auto 45px 0;
+}
+
+.content_container .about_me .about_me_about .about_me_div1_shadow .general_h3 {
+    /* font-family: Montserrat-Julie-SemiBold;
+    font-size: 22px; */
+    color: #A52424;
+    margin: 470px 19px 61px 97px;
+}
+
+.content_container .about_me .about_me_about .about_me_div1_shadow{
+    background-color: white;
+    width: 343px;
+    height: 560px;
+    box-shadow: 0 6px 10px 3px  rgba(0, 0, 0, 0.5);
+}
+
+.content_container .about_me .about_me_about img{
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+
+/*****************Права частина*******************/
+.content_container .about_me .about_me_hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+}
+
+.content_container .about_me .about_me_hello .general_h3{
+    font-family: Montserrat-Julie-SemiBold;
+    font-size: 22px;
+    color: #A52424;
+    height: 100%;
+    margin-bottom: 21px;
+}
+
+.content_container .about_me .about_me_hello .general_p{
+    /* font-family: Montserrat-Julie-Regular;
+    font-size: 18px;
+    color: #232323;
+    line-height: 130%;
+    letter-spacing: 1,4px; */
+    padding: 0;
+    margin: 0 0 7px 0;
+}
+
+.content_container .about_me .about_me_hello .about_me_div2_shadow{
+    width: 673px;
+    height: 372px;
+    /* background-color:aqua; */
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.content_container .about_me .about_me_hello .about_me_div2_shadow .foto_2{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 567px;
+    height: 330px;
+    top: 35px;
+    left: 118px;
+}
+.content_container .about_me .about_me_hello .about_me_div2_shadow .foto_1{
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    z-index: 1;
+}
+/**********************************************/
+
+
+/******************** Property of part 3.Portfolio *********************/
+.content_container .general_h2{   
+    margin: 150px auto 50px 0;
+}
+
+.content_container .portfolio{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.content_container .portfolio .portfolio_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.content_container .portfolio .portfolio_div:nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content_container .portfolio .portfolio_div .general_h3{
+    margin: 20px auto 10px 0;
+}
+
+.content_container .portfolio .portfolio_div .general_p{
+    margin: 0 auto 20px 0;
+}
+
+.content_container .portfolio .portfolio_div .general_button{
+   max-width: 202px;
+   padding: 18px 20px;
+}
+/********************** End of Property of part 3 ************/
+
+
+
+
+
+/******************** Property of part 4.Price *********************/
+.content_container .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.content_container .price .general_h2{
+    position: absolute;
+    top: -220px;
+    left: 0px;    
+}
+
+.content_container .price .price_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 40px 25px 40px;
+    width: 43.6%;
+    position: relative;
+}
+
+.content_container .price .price_div .double_foto{
+    margin: auto 70px 30px 70px;
+    max-width: 290px;
+    max-height: 290px;
+    align-content: center;    
+}
+
+.content_container .price .price_div .time_div p{
+     margin: 0;
+}
+
+.content_container .price .price_div .time_div:nth-child(2){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content_container .price .price_div .price_description_div{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.content_container .price .price_div .price_description_div .time_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_container .price .price_div .price_order{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.content_container .price .price_div .general_h3{
+    font-size: 24px;
+    text-align: center;
+    color: #A52424;
+    margin: 30px auto 25px auto;
+}
+
+.content_container .price .price_div .price_description_div .time_div .time_p{
+    font-family: Montserrat-Julie-SemiBold;
+    font-size: 18px;
+}
+
+.content_container .price .price_div .price_order .general_h3{
+    font-size: 36px;
+    color: #A52424;
+    margin: 0;
+}
+
+.content_container .price .price_div .price_order .general_button{
+    max-width: 250px;
+    max-height: 60px;
+    padding: 18px 20px;
+}
+
+.content_container .price .price_div .rectangle_15{
+    max-width: 510px;
+    max-height: 467px;
+    position: absolute;
+    z-index: -1;
+    top: 180px;
+    left: 0px;
+    margin: 0;
+}
+/********************** End of Property of part 4.Price ************/
+
+
+
+
+
+
+
+/********************** Start of Property of part 5.Sign up ************/
+.content_container .sign_up{
+    width: 100%;
+
+}
+
+.content_container .sign_up .general_h2{
+    text-align: left;
+    margin: 0
+}
+
+
+
+.content_container .sign_up .sign_up_div {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content_container .sign_up .sign_up_div .left_div_for_foto{
+    width: 585px;
+    height: 585px;
+    position: relative;
+    padding: 0;
+}
+
+.content_container .sign_up .sign_up_div .left_div_for_foto img:nth-child(1){
+   position: absolute;
+   z-index: 1;
+   left: 260px;
+   top: 0;
+  
+}
+
+.content_container .sign_up .sign_up_div .left_div_for_foto :nth-child(2){
+    position: absolute;
+    z-index: 0;
+    top:50px;
+    left: 0;
+
+}
+
+
+.content_container .sign_up .sign_up_div .right_div_for_form{
+    width: 480px;
+    height: 585px;
+    
+}
+
+.content_container .sign_up .sign_up_div .right_div_for_form form{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_container .sign_up .sign_up_div .right_div_for_form form input{
+    width: 100%;
+    height: 60px;
+}
+.content_container .sign_up .sign_up_div .right_div_for_form form input:nth-child(2){
+    margin: 40px 0 40px 0;
+}
+
+.content_container .sign_up .sign_up_div .right_div_for_form form textarea{
+   width: 100%;
+   height: 220px;
+   margin-bottom: 40px;
+   padding: 5px;
+}
+
+.content_container .sign_up .sign_up_div .right_div_for_form .general_button{
+    width: 100%;
+    height: 60px;
+}
+/********************** End Property of part 4.Sign up ************/
+
+
+
+/********************** Start Property of footer ************/
+ footer{
+    width: 100%;
+    max-height:160px;
+    /* background-color: lightgray; */
+    margin-top: 100px;
+    border-top: 1px solid black;
+}
+
+footer .footer_div{
+    width: 1170px;
+    height: 160px;
+    /* background-color: aqua; */
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+footer .footer_div img{
+    max-width: 113px; /*  максимальна ширина для логотипу */
+    max-height: 84px;
+  
+}
+
+footer .footer_div ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+
+    /* align-items: center;
+    justify-content: center; */
+}
+
+footer .footer_div ul li{
+    display: inline;
+    margin: 0 30px;
+    /* width: 30px;
+    height: 30px; */
+}
+
+footer .footer_div .contact_julie p {
+    margin: 0;
+    font-family: Montserrat-Julie-SemiBold;
+    font-size: 22px;
+    color: #A52424;
+}
+/********************** End Property of footer ************/
